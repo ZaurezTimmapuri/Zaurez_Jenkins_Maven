@@ -16,6 +16,7 @@ public class BaseClass {
 	public void setup() {
 		if (System.getProperty("browser").equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
+			System.setProperty("webdriver.chrome.driver", "\"D:\\Jenkins\\Selenium-file\\JenkinsDemo2\\JenkinsDemo2\\chromedriver.exe\"");
 			driver = new ChromeDriver();
 		} else if (System.getProperty("browser").equalsIgnoreCase("Firefox")) {
 			WebDriverManager.firefoxdriver().setup();
